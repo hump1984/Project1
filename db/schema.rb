@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160713220540) do
+ActiveRecord::Schema.define(version: 20160713221012) do
+
+  create_table "hours", force: true do |t|
+    t.string   "hour_type"
+    t.string   "reg_type"
+    t.datetime "reg_date"
+    t.datetime "time_start"
+    t.datetime "time_stop"
+    t.decimal  "hours"
+    t.text     "comment"
+    t.integer  "employee_id"
+    t.integer  "project_id"
+    t.string   "machine_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "projects", force: true do |t|
     t.integer  "project_id"
