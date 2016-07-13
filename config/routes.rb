@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   get 'pages/home'
 
-  get 'pages/about'
+  get 'pages/hour'
 
-  get 'pages/contact'
+  get 'pages/hr'
+  
+  get 'pages/calc'
 
   get 'pages/settings'
   

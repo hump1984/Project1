@@ -1,11 +1,11 @@
 class PagesController < ApplicationController
-  def home
+  def calc
   end
 
-  def about
+  def hour
   end
 
-  def contact
+  def hr
   end
 
   def settings
